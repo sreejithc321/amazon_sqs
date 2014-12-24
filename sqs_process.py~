@@ -4,7 +4,7 @@ from boto.sqs.message import Message
 from ConfigParser import SafeConfigParser
 
 ## Read from configuration file
-path = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'config.ini'
+path = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'decirc.ini'
 parser = SafeConfigParser()
 parser.read(path)
 access_key = parser.get('aws_connection', 'access_key')
