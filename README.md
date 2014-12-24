@@ -1,4 +1,4 @@
-rabbitmq
+sqs_process.py
 ========
 
 A Python script to delete,send and recieve messages/data from Amazon SQS.
@@ -14,7 +14,7 @@ To install libraries run :
 Ref : https://github.com/boto/boto
 
 ## Description
-   rabbitmq.py
+   sqs_process.py
    - read_data () : To read message/data from sqs queue
    - write_data() : To write message/data from queue
    - delete_data() : To delete message/data from queue
