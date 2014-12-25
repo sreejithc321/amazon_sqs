@@ -12,7 +12,7 @@ secret_key = parser.get('aws_connection', 'secret_key')
 region_name = parser.get('sqs_connection', 'region_name')
 
 ## Class to process data from AWS SQS 
-class DecircSQS(object):
+class ProcessSQS(object):
 	
 	def __init__(self):
 		self.SQS_connect = boto.sqs.connect_to_region(region_name, aws_access_key_id=access_key, aws_secret_access_key=secret_key)
