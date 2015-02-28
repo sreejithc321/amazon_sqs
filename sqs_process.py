@@ -13,12 +13,13 @@ region_name = parser.get('sqs_connection', 'region_name')
 
 ## Class to process data from AWS SQS 
 class ProcessSQS(object):
-	
+        '''class to process SQS'''	
 	def __init__(self):
 		self.SQS_connect = boto.sqs.connect_to_region(region_name, aws_access_key_id=access_key, aws_secret_access_key=secret_key)
 	
 	def read_data(self, queue_name): 
 		queue = self.SQS_connect.get_queue(queue_name)
+                # Polling time = 20 seconds
 		return queue.read(wait_time_seconds=20)		
 	
 	def write_data(self, queue_name, data):
