@@ -21,5 +21,3 @@ Ref : https://github.com/boto/boto
 ## Configuration
    config.ini -  add your configuration details here 
 
-
-
